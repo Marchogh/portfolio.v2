@@ -297,11 +297,55 @@ img {
 
 .wrapper {
   margin-right: 16.666vw;
-  margin-left: 16.666vw; }
+  margin-left: 16.666vw;
+  line-height: 1.5;
+  letter-spacing: .008em;
+  font-size: 0.95rem; }
+  .wrapper section {
+    margin-top: 6.4rem; }
+  .wrapper section:nth-child(n+2) {
+    border-top: 1px solid #ddd;
+    padding-top: 2em; }
+  .wrapper h4 {
+    font-weight: bold;
+    font-size: 1.2em; }
+  .wrapper h4:nth-child(n+2) {
+    margin-top: 2rem; }
+  .wrapper span {
+    color: #111;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.4);
+    font-weight: 700;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    z-index: 0; }
+  .wrapper span:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1em;
+    bottom: 0;
+    margin: auto;
+    border-radius: .2rem;
+    background-color: rgba(101, 101, 195, 0.4);
+    -webkit-transition: all .8s .4s ease-in-out;
+    -o-transition: all .8s .4s ease-in-out;
+    transition: all .8s .4s ease-in-out; }
 
-.container-head {
+.section-title {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  font-weight: bold; }
+
+.section-head {
   margin-top: 6.4rem;
-  margin-bottom: 3.2rem;
+  margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,20 +355,36 @@ img {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end; }
-  .container-head h1 {
+  .section-head h1 {
     border-bottom: 5px solid #222;
     display: inline-block;
     font-size: 4.5em; }
-  .container-head h2 {
+  .section-head h2 {
     font-size: 1.5em;
     margin-top: 20px; }
-  .container-head-contact {
+  .section-head-contact {
     text-align: end;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end; }
-    .container-head-contact p {
-      margin: 10px 0; }
-    .container-head-contact a {
+    .section-head-contact p {
+      margin: 5px 0; }
+    .section-head-contact a {
       text-decoration: none;
       border-bottom: 1px solid #6565c3; }
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.skills ul {
+  list-style-type: disc;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-left: 1.15em; }
+
+.experince-section a {
+  -webkit-text-decoration-color: #6565c3;
+  text-decoration-color: #6565c3;
+  font-weight: bold; }
