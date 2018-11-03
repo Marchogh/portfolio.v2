@@ -1,0 +1,129 @@
+.about-me {
+    @include container;  
+    @include clearfix;  
+    margin-top: 5em;
+    margin-bottom: 5em;
+
+    p {
+        font-size: 1.1rem;
+    }
+
+}
+
+.about-img {
+    max-height: 25em;
+
+    @media (min-width: 42em) {
+    float: left;
+    margin-right: 1em;
+    }
+}
+
+.about-title {
+    margin-bottom: .25em;
+    color: #000021;
+    font-size: 2.8rem;
+}
+
+.about-subtitle {
+    margin: .5em 0;
+    color: #333333;
+    font-size: 1.8rem;
+}
+
+@supports (display: grid) {
+    .about-me {
+     display: grid;
+     grid-template-columns: [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr) [img-end] 2fr [port-end]; 
+     grid-column-gap: 1em;   
+    
+     @include mq-s {
+            display: flex;
+            flex-direction: column;
+        } 
+     
+    }
+
+    .about-img {
+        grid-column: port-start / img-end;
+        grid-row: 1 / 4;
+
+         @include mq-s {
+            width: 30%;
+            text-align: center;
+        } 
+    }
+
+    .about-title {
+        grid-column: image-end / port;
+        grid-row: 1 / 2;
+        align-self: end;
+        font-family: 'Sans Forgetica';
+    }
+
+    .about-subtitle,
+    .about-text {
+        grid-column: image-end / port-end;
+        line-height: 1.7rem;
+
+    }
+
+    .about-subtitle {
+        grid-row: 2/ 3;
+    }
+
+    .about-text {
+        grid-row: 3 / 4;
+    }
+}
+
+// Btn 
+.about-btn {
+      align-self:center;
+      background:transparent;
+      padding:1rem 1rem;
+      margin: 20px 0;
+      transition:all .5s ease;
+      color:#41403E;
+      font-size:1.2rem;
+      letter-spacing:1px;
+      outline:none;
+      box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+      border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+      width: 180px;
+}
+
+.about-btn:hover {
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+
+.about-me h1 {
+    text-align: center;
+    font-size: 2.4rem; 
+    color: #333333;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.about-me h1:before {
+    bottom: 0;
+    width: 100px;
+    padding: 4px 0 5px;
+    border-style: solid;
+    border-width: 1px 0;
+    border-color: #737373;
+}
+
+.about-me h1:after, .about-me h1:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.searchmind {
+    font-size: 1em;
+    color: #6565c3;
+}

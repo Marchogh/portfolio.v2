@@ -9,7 +9,7 @@
     <title>Marc Høgh Portfolio - Multimediedesigner</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
-<script async>
+<script>
  WebFont.load({
     google: {
       families: ['Source Montserrat:400,700', 'Montserrat:400,700']
@@ -58,20 +58,65 @@
                 <span class="m_scroll_arrows trei"></span>
             </a>
             </div>
-        </div>
+        <!-- </div> -->
   
         <div class="wrapper">
         <section class="work">
             <h2>Seneste arbejde</h2>
             <div class="work-grid">
-            <div> <img src="/images/beautybyserrani.png" alt=""> </div>
+            <div> <img src="/images/inzspirit.png" alt=""> </div>
             <div> <img src="/images/billscoffee.png" alt=""> </div>
             <div> <img src="/images/lestragon.png" alt=""> </div>
-            <div></div>
+            <div> <img src="/images/beautybyserrani.png" alt=""> </div>
             </div>
         </section>
-         
-    </div>    
+
+        <section class="about-me" id="about">
+                <img class="about-img" src="images/marc.jpg" alt="marc">
+                <h2 class="about-title">Marc Høgh</h2>
+                <h3 class="about-subtitle">Lidt om mig</h3>
+                <div class="about-text">
+                  <p>Hej, mit navn er Marc Høgh.</p>
+                  <p>Jeg er en frontend udvikler & web designer.</p>
+                  <p>Jeg er fra Klitmøller, og bor i Aarhus. Jeg har en passion for at lære nye teknologiere. Jeg er i gang med 4. semester på Multimediedesigner uddannelsen i Aarhus og er i praktik hos <a class="searchmind" href="https://www.searchmind.dk/">Searchmind</a></p>
+                  <a href="cv.html"> <button class="about-btn">Se mit CV</button></a>
+                </div>
+              </section>
+
+              <section class="contact" id="contact">
+                    <h3>Kontakt mig</h3>
+                    <form name="contact" action="POST" data-netlify="true">
+                    
+                    <label class="name">Navn:
+                      <input type="text" name="name" id="name">
+                    </label>
+                    
+                    <label class="email">Email:
+                        <input type="email" name="email" id="email">
+                      </label>
+                    
+                      <label class="message">Besked:
+                        <textarea name="message" id="message"></textarea>
+                      </label>
+                    
+                      <p class="sendmail">Eller send en mail på: <a href="mailto:marchogh@hotmail.com?Subject=Hello%20again" target="_top" class="sendmail"> Marchogh@hotmail.com </a></p>
+                     <input class="button form-button" type="submit" value="SEND">
+                    
+                    </form>
+                    </section>      
+
+                     <!-- Footer -->
+                <footer>
+                        <p>Fang mig på de sociale medier</p>
+                        <div class="social-icons">
+                        <a class="social-icon" href="https://www.facebook.com/marchogh"><img  src="/images/social/facebook.svg" alt="Facebook Marc"></a>
+                        <a class="social-icon" href="https://www.linkedin.com/in/marc-h%C3%B8gh-506811149/"><img  src="/images/social/linkedin.svg" alt="Linkedin Marc"></a>
+                        <a class="social-icon" href="https://github.com/Marchogh"><img  src="/images/social/github.svg" alt="Github Marc"></a>
+                        </div>
+                        <p class="copyright">Copyright 2018 - Marc Høgh</p>
+                    </footer>
+                    
+                </div>   
 
 </body>
 </html>
