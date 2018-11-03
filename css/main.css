@@ -7,6 +7,18 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+::-moz-selection {
+  background: #6565c3;
+  /* WebKit/Blink Browsers */ }
+
+::selection {
+  background: #6565c3;
+  /* WebKit/Blink Browsers */ }
+
+::-moz-selection {
+  background: #6565c3;
+  /* Gecko Browsers */ }
+
 @font-face {
   font-family: "Sans Forgetica";
   src: url("/fonts/SansForgetica-Regular.otf"); }
@@ -16,6 +28,8 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
   padding: 0;
   font-weight: normal;
   font-family: 'Montserrat';
+  line-height: 1.5;
+  letter-spacing: .008em;
   color: #222;
   background: #fdfdfd; }
 
@@ -295,12 +309,23 @@ img {
   100% {
     opacity: 1; } }
 
+.work h2 {
+  font-size: 1.2em;
+  margin-bottom: 20px; }
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px; }
+  .work-grid img {
+    -o-object-fit: cover;
+    object-fit: cover;
+    height: 400px; }
+
 .wrapper {
   margin-right: 16.666vw;
-  margin-left: 16.666vw;
-  line-height: 1.5;
-  letter-spacing: .008em;
-  font-size: 0.95rem; }
+  margin-left: 16.666vw; }
   .wrapper section {
     margin-top: 6.4rem; }
   .wrapper section:nth-child(n+2) {

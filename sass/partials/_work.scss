@@ -1,0 +1,19 @@
+.work {
+    h2 {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+
+    img {
+        object-fit: cover;
+        height: 400px;
+    }
+}
+
