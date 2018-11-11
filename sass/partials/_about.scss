@@ -12,6 +12,7 @@
 
 .about-img {
     max-height: 25em;
+    border-radius: 10px;
 
     @media (min-width: 42em) {
     float: left;
@@ -21,12 +22,12 @@
 
 .about-title {
     margin-bottom: .25em;
-    color: #000021;
     font-size: 2.8rem;
+    font-weight: bold;
 }
 
 .about-subtitle {
-    margin: .5em 0;
+    margin-bottom: .5em;
     color: #333333;
     font-size: 1.8rem;
 }
@@ -47,6 +48,7 @@
     .about-img {
         grid-column: port-start / img-end;
         grid-row: 1 / 4;
+        box-shadow: 10px 5px 25px 0 rgba(0,0,0,.1);
 
          @include mq-s {
             width: 30%;
@@ -58,7 +60,7 @@
         grid-column: image-end / port;
         grid-row: 1 / 2;
         align-self: end;
-        font-family: 'Sans Forgetica';
+        margin-top: -15px;
     }
 
     .about-subtitle,
@@ -100,7 +102,6 @@
 .about-me h1 {
     text-align: center;
     font-size: 2.4rem; 
-    color: #333333;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 18px;

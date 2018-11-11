@@ -8,17 +8,16 @@ html {
   }
 
   ::selection {
-    background: #6565c3; /* WebKit/Blink Browsers */
+    background: #6565c3; 
   }
   ::-moz-selection {
-    background: #6565c3; /* Gecko Browsers */
+    background: #6565c3;
   }
 
-  @font-face {
-    font-family: "Sans Forgetica";
-    src:url("/fonts/SansForgetica-Regular.otf");
-}
-  
+  body {
+    background-color: #fdfdfd;
+  }
+
   body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
     margin: 0;
     padding: 0;
@@ -27,13 +26,12 @@ html {
     line-height: 1.5;
     letter-spacing: .008em;
     color: #222;
-    background: #fdfdfd;
+  
+    &.in-transition {
+      transition: transform 500ms ease;
+    }
   }
 
-  h1 {
-    font-family: 'Sans Forgetica';
-  }
-  
   ol, ul {
     list-style: none;
   }
@@ -42,3 +40,4 @@ html {
     max-width: 100%;
     height: auto;
   }
+

@@ -1,7 +1,7 @@
 .contact {
     @include container;
-    padding: 5em 0;
-
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
     h3{
         text-align: center;
     }
@@ -20,7 +20,7 @@
 form {
     display: flex;
     flex-direction: column;
-
+    
     @supports (display: grid) {
         @include mq-m {
           display: grid;
@@ -35,6 +35,7 @@ form {
             
             .name {
               grid-area: name;
+              
             }
     
             .email {
@@ -70,6 +71,7 @@ label {
     margin-top: 1em;
     color: #606060;
     font-size: 1.2rem;
+    
 }
 
 input, 
@@ -79,7 +81,8 @@ textarea {
     padding: .75em;
     width: 100%;
     background: lighten(#fbfbfc, 7%);
-    border: 1px solid #e8e9eb;
+    border: 1px solid #414141;
+    border-radius: 10px;
     font-size: 1.2rem;
 }
 
@@ -109,9 +112,15 @@ textarea {
     font-size: 2.8rem;
     text-transform: uppercase;
     padding-bottom: 18px;
-    font-family: 'Sans Forgetica';
+    font-weight: bold;
 }
 
 .sendmail {
     font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        display: unset;
+    }
 }

@@ -2,12 +2,13 @@
 <html lang="da">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Marc Høgh - Multimediedesigner i Aarhus, frontend developer & designer">
+    <meta name="description" content="Marc Høgh - Multimediedesigner i Aarhus, Frontend udvikler, SEO & designer">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="css/main.css">
     <title>Marc Høgh Portfolio - Multimediedesigner</title>
-
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 <script>
  WebFont.load({
@@ -21,13 +22,13 @@
 
     <header class="header">
       
-    <svg class="logo" id="Layer_1" data-name="Layer 1" viewBox="0 0 291 302"><defs><style>.cls-1{fill:#1b1b1b}</style></defs><path class="cls-1" d="M796 309h98c38 0 74 24 88 58v6l-37 40-31-34-41-45c-1-2-4-3-7-3h-13v165l-19-13a96 96 0 0 1-38-79v-95zM1077 519h-40V344a91 91 0 0 1 24 24c10 16 16 34 16 52v99z" transform="translate(-796 -309)" /><path class="cls-1" d="M988 435v85a101 101 0 0 1-32-3c-21-5-38-17-52-34a9 9 0 0 1-2-4l1-43 4 5 32 34c5 5 7 4 12-1l33-34 4-5z" transform="translate(-796 -309)" /></svg>
+    <svg class="logo" id="Layer_1" data-name="Layer 1" viewBox="0 0 291 302"><a href="index.html"><defs><style>.cls-1{fill:#1b1b1b}</style></defs><path class="cls-1" d="M796 309h98c38 0 74 24 88 58v6l-37 40-31-34-41-45c-1-2-4-3-7-3h-13v165l-19-13a96 96 0 0 1-38-79v-95zM1077 519h-40V344a91 91 0 0 1 24 24c10 16 16 34 16 52v99z" transform="translate(-796 -309)" /><path class="cls-1" d="M988 435v85a101 101 0 0 1-32-3c-21-5-38-17-52-34a9 9 0 0 1-2-4l1-43 4 5 32 34c5 5 7 4 12-1l33-34 4-5z" transform="translate(-796 -309)" /></a></svg>
   
     <nav class="nav">
         <ul>
-            <li><a class="text" href="">Arbejde</a></li>
-            <li><a class="text" href="">Om mig</a></li>
-            <li><a class="text" href="">Kontakt</a></li>
+            <li><a class="text" href="#work">Arbejde</a></li>
+            <li><a class="text" href="#about">Om mig</a></li>
+            <li><a class="text" href="#contact">Kontakt</a></li>
         </ul>
     </nav>
 </header>
@@ -48,26 +49,62 @@
         
                 
             <div class="scrolldown-wrapper">
-                    <a href="">
+                    <a href="#work">
             <div class="mouse">
                 <div class="wheel"></div>
             </div>
-            <div>
+            
                 <span class="m_scroll_arrows unu"></span>
                 <span class="m_scroll_arrows doi"></span>
                 <span class="m_scroll_arrows trei"></span>
             </a>
-            </div>
-        <!-- </div> -->
-  
+        </div>
+            
         <div class="wrapper">
-        <section class="work">
+        <section id="work"  class="work">
             <h2>Seneste arbejde</h2>
             <div class="work-grid">
-            <div> <img src="/images/inzspirit.png" alt=""> </div>
-            <div> <img src="/images/billscoffee.png" alt=""> </div>
-            <div> <img src="/images/lestragon.png" alt=""> </div>
-            <div> <img src="/images/beautybyserrani.png" alt=""> </div>
+            <div class="item-wrap"> 
+            <img src="/images/inzspirit.png" alt="inzspirit"> 
+                <div class="caption-overlay">
+                <h3>inzspirit</h3> 
+                <figcaption> 
+                <p>Custom side konveteret til Wordpress</p> 
+                <button><a href="">Se siden → </a></button> 
+                </figcaption>   
+                </div> 
+            </div>
+
+            <div class="item-wrap"> <img src="/images/billscoffee.png" alt="billscoffee"> 
+                <div class="caption-overlay">
+                <h3>Bill's Coffee</h3> 
+                <figcaption> 
+                <p>Bootstrap</p> 
+                <button><a href="https://billscoffee.dk/">Se siden → </a></button> 
+                </figcaption>   
+                </div>
+             </div>
+
+            <div class="item-wrap"> <img src="/images/lestragon.png" alt="lestragon"> 
+                <div class="caption-overlay">
+                <h3>Lestragon</h3> 
+                <figcaption> 
+                <p>HTML, CSS & JS opsat i Couch CMS</p> 
+                <button><a href="http://lestragon.kiil.nu/">Se siden → </a></button> 
+                </figcaption>   
+                </div>
+            </div>
+
+
+            <div class="item-wrap"> <img src="/images/beautybyserrani.png" alt="beautybyserrani"> 
+            <div class="caption-overlay">
+                <h3>BeautyBySerrani</h3> 
+                <figcaption> 
+                <p>Wordpress side</p> 
+                <button><a href="https://beautybyserrani.dk/">Se siden → </a></button> 
+                </figcaption>   
+                </div>
+            </div>
             </div>
         </section>
 
@@ -117,6 +154,6 @@
                     </footer>
                     
                 </div>   
-
+                <script src="/js/main.js"></script>
 </body>
 </html>

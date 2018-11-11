@@ -2,6 +2,14 @@
   width: 5em;
   }
 
+  @media screen and (max-width: 600px) {
+    .logo {
+     margin: auto;
+     width: 3em;
+     margin-top: 2em;
+    }
+  }
+
   .grid {
     position: fixed;
     top: 0;
@@ -54,7 +62,7 @@
 
         a {
             text-decoration: none;
-            // padding: 1.3em;
+            z-index: 99;
             position: relative;
             margin-right: 15px;
             font-weight: 700;
@@ -62,8 +70,22 @@
     }
 }
 
+@media screen and (max-width: 600px) {
+  .header {
+    margin-right: 5vw;
+    margin-left: 5vw;
+    flex-direction: column;
+
+    .nav {
+      width: initial;
+      margin-top: 1em;
+      justify-content: center;
+    }
+  }
+}
+
 .text {
-    transition: background-size .4s ease;
+  transition: background-size .4s ease;
   background: linear-gradient(to bottom, transparent 62%, #6565c3 0) center center/0% 75% no-repeat;
   padding: 0 6px 2px 6px;
   cursor: pointer;
@@ -73,9 +95,7 @@
   }
   &:active {
     background-size: 80% 100%;
-    z-index: -1;
   }
-
 }
 
 .main {
@@ -93,6 +113,7 @@
 .main h1 {
     font-size: 3em;
     color: #222;
+    font-weight: 900;
 }
 
 .main p {
@@ -127,6 +148,20 @@
 
 .main-btn:hover {
   box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    height: 55vh;
+
+    p {
+      font-size: 1em;
+    }
+
+     h1 {
+      font-size: 2em;
+    }
+  }
 }
 
 

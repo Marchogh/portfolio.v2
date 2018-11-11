@@ -3,7 +3,76 @@
         font-size: 1.2em;
         margin-bottom: 20px;
     }
+
+    .item-wrap {
+        position: relative;
+    }
+
+    h3 {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        font-weight: bold;
+        font-size: 2em;
+        opacity: 0;
+        transition: all 500ms ease-out;
+        transition-delay: 350ms;
+       
+        }
+
+    figcaption {
+        position: absolute;
+        bottom: 25px;
+        left: 25px;
+        opacity: 0;
+        transition: all 500ms ease-out;
+        transition-delay: 500ms;
+        p {
+            font-size: 1.2em;
+        }
+
+        button {
+            border: none;
+            background: none;
+            bottom: 0;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.3em;
+        }
+    }
 }
+
+.caption-overlay {
+    position: absolute;
+    background: rgba(101, 101, 195, .95);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 250ms ease-out;
+}
+
+.work {
+    .caption-overlay:hover  {
+        opacity: 1;
+    }
+    .caption-overlay:hover figcaption {
+        opacity: 1;
+    }
+    .caption-overlay:hover h3 {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .work h2 {
+      text-align: center;
+    }
+  }
 
 .work-grid {
     display: grid;
@@ -15,6 +84,17 @@
         object-fit: cover;
         height: 400px;
         width: 100%;
+        border-radius: 10px;
+        box-shadow: 10px 5px 25px 0 rgba(0,0,0,.1);
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+
+        img {
+            height: auto;
+        }
+    }
+}
