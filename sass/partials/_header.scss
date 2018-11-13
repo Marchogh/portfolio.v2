@@ -1,5 +1,36 @@
 .logo {
   width: 5em;
+  animation: 1000ms ease-in fadein;
+  }
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .email-left {
+    position: fixed;
+    top: 50%;
+    left: -75px;
+    transform: rotate(-90deg);
+    animation: 1000ms ease-in fadein;
+
+    p {
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .email-left {
+     display: none;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -56,7 +87,7 @@
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
-
+    animation: 1000ms ease-in fadein;
     ul {
         display: flex;
 
@@ -108,6 +139,8 @@
     height: 70vh;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    animation: 1500ms ease-in fadein;
+
 }
 
 .main h1 {
@@ -168,7 +201,8 @@
     .scrolldown-wrapper {
         display: flex;
         flex-direction: column;
-        align-items: center
+        align-items: center;
+        animation: 1000ms ease-in fadein;
     }
 
 

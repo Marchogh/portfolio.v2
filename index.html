@@ -8,10 +8,11 @@
     <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="css/main.css">
+    <script async src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <title>Marc Høgh Portfolio - Multimediedesigner</title>
 </head>
 <body>
-
+    
     <header class="header">
       
     <svg class="logo" id="Layer_1" data-name="Layer 1" viewBox="0 0 291 302"><a href="index.html"><defs><style>.cls-1{fill:#1b1b1b}</style></defs><path class="cls-1" d="M796 309h98c38 0 74 24 88 58v6l-37 40-31-34-41-45c-1-2-4-3-7-3h-13v165l-19-13a96 96 0 0 1-38-79v-95zM1077 519h-40V344a91 91 0 0 1 24 24c10 16 16 34 16 52v99z" transform="translate(-796 -309)" /><path class="cls-1" d="M988 435v85a101 101 0 0 1-32-3c-21-5-38-17-52-34a9 9 0 0 1-2-4l1-43 4 5 32 34c5 5 7 4 12-1l33-34 4-5z" transform="translate(-796 -309)" /></a></svg>
@@ -24,7 +25,9 @@
         </ul>
     </nav>
 </header>
-
+<div class="email-left">
+    <p>Marchogh@hotmail.com</p>
+</div>
     <div class="grid">
         <div class="line"></div>
         <div class="line"></div>
@@ -32,7 +35,6 @@
         <div class="line"></div>
         <div class="line"></div>
     </div>
-        
         <section class="main">
         <p>Hej, mit navn er Marc <span class="main-span">.</span></p>
         <h1>Frontend udvikler - SEO - Design.</h1>
@@ -56,7 +58,7 @@
         <section id="work"  class="work">
             <h2>Seneste arbejde</h2>
             <div class="work-grid">
-            <div class="item-wrap"> 
+            <div data-aos="fade-down" class="item-wrap"> 
                 <picture>
                     <source type="image/webp" srcset="/images/inzspirit.webp">
                      <img src="/images/inzspirit.jpg" alt="inzspirit"> 
@@ -70,7 +72,7 @@
                 </div> 
             </div>
 
-            <div class="item-wrap"> 
+            <div data-aos="fade-down" class="item-wrap"> 
                 <picture>
                     <source type="image/webp" srcset="/images/billscoffee.webp">
                     <img src="/images/billscoffee.jpg" alt="billscoffee"> 
@@ -84,7 +86,7 @@
                 </div>
              </div>
 
-            <div class="item-wrap"> 
+            <div data-aos="fade-down" class="item-wrap"> 
                 <picture>
                     <source type="image/webp" srcset="/images/lestragon.webp">
                     <img src="/images/lestragon.jpg" alt="lestragon"> 
@@ -99,7 +101,7 @@
             </div>
 
 
-            <div class="item-wrap"> 
+            <div data-aos="fade-down" class="item-wrap"> 
                 <picture>
                     <source type="image/webp" srcset="/images/beautybyserrani.webp">
                 <img src="/images/beautybyserrani.jpg" alt="beautybyserrani"> 
@@ -116,7 +118,7 @@
         </section>
 
         <section class="about-me" id="about">
-                <img class="about-img" src="images/marc.jpg" alt="marc">
+                <img data-aos="fade-down" class="about-img" src="images/marc.jpg" alt="marc">
                 <h2 class="about-title">Marc Høgh</h2>
                 <h3 class="about-subtitle">Lidt om mig</h3>
                 <div class="about-text">

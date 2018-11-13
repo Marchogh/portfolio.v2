@@ -13,3 +13,7 @@ for (let item of anchorlinks) { // relitere
         e.preventDefault()
     })
 }
+
+AOS.init({
+    duration: 1200,
+  })
