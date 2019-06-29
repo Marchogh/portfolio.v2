@@ -17,3 +17,4 @@ for (let item of anchorlinks) { // relitere
 AOS.init({
     duration: 1200,
   })
+
