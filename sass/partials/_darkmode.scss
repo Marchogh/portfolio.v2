@@ -1,0 +1,16 @@
+.darkmode--activated .wheel {
+    border: 2px solid white;
+  }
+
+  .darkmode--activated .m_scroll_arrows {
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+
+  .darkmode--activated .nav ul a {
+    color: white;
+  }
+
+  .darkmode--activated .wrapper-cv span::before {
+    background-color: rgb(255, 255, 255);
+  } 
